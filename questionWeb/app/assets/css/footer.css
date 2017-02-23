@@ -1,0 +1,18 @@
+/*脚部*/
+.my_bottom{
+    font-family: 宋体;
+
+    font-size: 12px;
+    text-align: center;
+    height: 100px;
+    color: #ccc;
+    z-index: 3000;
+}
+/*脚部最小宽度*/
+.my_min_footer_width{
+    background: #333333;
+    width: 100%;
+    min-width: 900px;
+}
+
+

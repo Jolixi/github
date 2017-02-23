@@ -1,0 +1,63 @@
+
+
+/*
+ * 边栏样式设置
+ */
+
+.sidebar {
+    width: 230px;
+    position: fixed;
+    top: 59px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #333333;
+    border-right: 1px solid #eee;
+}
+
+/* 边栏导航组设置 */
+.nav-sidebar {
+    margin-right: -21px; /* 20px padding + 1px border */
+    margin-bottom: 20px;
+    margin-left: -20px;
+}
+
+/*边栏链接样式设置*/
+.sidebar .nav-sidebar > li > a {
+    padding-right: 20px;
+    padding-left: 20px;
+    color: #eeeeee;
+}
+
+/*边栏图标*/
+.sidebar .nav-sidebar > li > a > i {
+    margin-right: 6px;
+}
+
+.sidebar .nav-sidebar > li > a > span {
+    display: inline-block;
+}
+
+/*边栏数据总数图标*/
+
+.span-sidebar {
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    width: 30px;
+    height: 20px;
+    line-height: 20px;
+    padding: 0px;
+}
+
+/*边栏鼠标移上去的样式*/
+.sidebar > .nav > li > a:hover, .sidebar > .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #565456;
+    color:#fa9a12;
+}
+

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+    <meta charset="UTF-8">
+    <title>more</title>
+
+    <!--页面响应式布局meta（严格模式）-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--响应式布局链接的css文件-->
+    <link rel="stylesheet" href="assets/css/more.css"/>
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+
+    <!--jquery-->
+    <script src="../bower_components/jquery-3.1.0.js"></script>
+    <!--scrollTo-->
+    <script src="../bower_components/jquery.scrollTo/jquery.scrollTo.min.js"></script>
+    <!--angular-->
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <!--angular路由-->
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <!--模块顺序【1】-->
+    <script src="app.js"></script>
+    <script src="server/basePath.js"></script>
+    <script src="directive/headerDirective.js"></script>
+    <script src="directive/footerDirective.js"></script>
+
+</head>
+<body>
+<hearder-tpl>
+    <subject-topic>题库</subject-topic>
+    <subject-more style="color: orange">更多</subject-more>
+    <nav-content><a href="login.html">登录</a></nav-content>
+</hearder-tpl>
+
+<!--导航条-->
+
+<div class="container min-width">
+    <div class="row ">
+        <div class="col-lg-6  col-md-6  col-sm-6  col-xs-6 " style="margin: 5% 0 0 1.5%;">
+            <a href="index.html">
+                <img src="assets/img/more_img/home_more_back.png" class="back"/>
+            </a>
+            <div class="col-lg-1 col-sm-1 col-md-1 col-xs1"></div>
+            <a href="#" class="">
+                <img src="assets/img/more_img/home_more_choose.png" class=" choose"/>
+            </a>
+        </div>
+    </div>
+
+    <div class="row more_row">
+        <ul>
+            <li>
+                <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4 more_box ">
+                    <img src="assets/img/more_img/css_hover.png" class="img-responsive center-block"/>
+                    <div class="position-div row">
+                        <span class="col-lg-12 col-sm-12 col-md-12 col-xs-12 text-center">css全新试题</span>
+                        <span class="col-lg-12 col-sm-12 col-md-12 col-xs-12 text-center">更新值016.10.20</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4 more_box ">
+                    <img src="assets/img/more_img/html_hover.png" class="img-responsive center-block"/>
+                    <div class="position-div row">
+                        <span class="col-lg-12 col-sm-12 col-md-12 col-xs-12 text-center">html全新试题</span>
+                        <span class="col-lg-12 col-sm-12 col-md-12 col-xs-12 text-center">更新值016.10.20</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4 more_box ">
+                    <img src="assets/img/more_img/angular_hover.png" class="img-responsive center-block"/>
+                    <div class="position-div row">
+                        <span class="col-lg-12 col-sm-12 col-md-12 col-xs-12 text-center">angular全新试题</span>
+                        <span class="col-lg-12 col-sm-12 col-md-12 col-xs-12 text-center">更新值016.10.20</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4 more_box ">
+                    <img src="assets/img/more_img/java_hover.png" class="img-responsive center-block"/>
+                    <div class="position-div row">
+                        <span class="col-lg-12 col-sm-12 col-md-12 col-xs-12 text-center">java全新试题</span>
+                        <span class="col-lg-12 col-sm-12 col-md-12 col-xs-12 text-center">更新值016.10.20</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4 more_box ">
+                    <img src="assets/img/more_img/html_hover.png" class="img-responsive center-block"/>
+                    <div class="position-div row">
+                        <span class="col-lg-12 col-sm-12 col-md-12 col-xs-12 text-center">html全新试题</span>
+                        <span class="col-lg-12 col-sm-12 col-md-12 col-xs-12 text-center">更新值016.10.20</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4 more_box ">
+                    <img src="assets/img/more_img/angular_hover.png" class="img-responsive center-block"/>
+                    <div class="position-div row">
+                        <span class="col-lg-12 col-sm-12 col-md-12 col-xs-12 text-center">angular全新试题</span>
+                        <span class="col-lg-12 col-sm-12 col-md-12 col-xs-12 text-center">更新值016.10.20</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--脚部-->
+<footer-tpl></footer-tpl>
+</body>
+</html>

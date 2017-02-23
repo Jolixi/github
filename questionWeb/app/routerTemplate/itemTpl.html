@@ -1,0 +1,103 @@
+<div ng-if="toId==1&&itid==1">
+
+    <div class="panel panel-default panel-width">
+      <div class="panel-heading title">单选题</div>
+      <div class="panel-body">
+          <p class="topic_title">在html中，样式表按照应用方式可以分为三种类型，其中不包括（）。</p>
+          <p class="topic_p"><input  type="radio" name="1" >A.内嵌样式表</p>
+          <p class="topic_p"><input type="radio" name="1" >B.行内样式表</p>
+          <p class="topic_p"><input type="radio" name="1" >C.外部样式表文件</p>
+          <p class="topic_p"><input type="radio" name="1" >D.类样式表</p>
+      </div>
+    </div>
+</div>
+<div ng-if="toId==1&&itid==2">
+    <div class="panel panel-default panel-width">
+        <div class="panel-heading title">单选题答案</div>
+        <div class="panel-body ">
+            <p  class="topic_p">答案:a</p>
+        </div>
+    </div>
+</div>
+<div ng-if="toId==2&&itid==1">
+    <div class="panel panel-default panel-width">
+        <div class="panel-heading title">多选题</div>
+        <div class="panel-body">
+            <p class="topic_title">现在使用的最规范的js库环境搭建的方式是（）</p>
+            <p  class="topic_p"><input type="checkbox" name="1" style="margin-right: 5px;">A.内嵌样式表</p>
+            <p  class="topic_p"><input type="checkbox" name="1" style="margin-right: 5px;">B.行内样式表</p>
+            <p  class="topic_p"><input type="checkbox" name="1" style="margin-right: 5px;">C.外部样式表文件</p>
+            <p  class="topic_p"><input type="checkbox" name="1" style="margin-right: 5px;">D.类样式表</p>
+        </div>
+    </div>
+</div>
+
+<div ng-if="toId==2&&itid==2">
+    <div class="panel panel-default panel-width">
+        <div class="panel-heading title">多选题答案</div>
+        <div class="panel-body">
+            <p  class="topic_p">答案:abc</p>
+        </div>
+    </div>
+</div>
+
+<div ng-if="toId==3&&itid==1">
+    <div class="panel panel-default panel-width">
+        <div class="panel-heading title">判断题</div>
+        <div class="panel-body">
+            <p class="topic_title">Canvas依赖分辨率，不支持事件处理器，文本渲染能力弱，能够以 .png 或 .jpg 格式保存结果图像，最适合图像密集型的游戏。</p>
+            <p  class="topic_p"><input type="radio" name="1" style="margin-right: 5px;">正确</p>
+            <p  class="topic_p"><input type="radio" name="1" style="margin-right: 5px;">错误</p>
+        </div>
+    </div>
+</div>
+
+<div ng-if="toId==3&&itid==2">
+    <div class="panel panel-default panel-width">
+        <div class="panel-heading title">判断题答案</div>
+        <div class="panel-body">
+            <p  class="topic_p">错</p>
+        </div>
+    </div>
+</div>
+
+<div ng-if="toId==4&&itid==1">
+    <div class="panel panel-default panel-width">
+        <div class="panel-heading title">问答题</div>
+        <div class="panel-body">
+            <p class="topic_title">查询所有员工的姓名和年薪并按照年薪降序排列</p>
+            <textarea class="answer-text"></textarea>
+        </div>
+    </div>
+</div>
+
+<div ng-if="toId==4&&itid==2">
+    <div class="panel panel-default panel-width">
+        <div class="panel-heading title">问答题答案</div>
+        <div class="panel-body">
+            <p class="topic_p">solect * from topic;</p>
+        </div>
+    </div>
+</div>
+
+<div ng-if="toId==5&&itid==1">
+    <div class="panel panel-default panel-width">
+        <div class="panel-heading title">填空题</div>
+        <div class="panel-body">
+            <p class="topic_title">表格有3个基本组成部分，分别是
+                <input type="text" style="width:100px;border:0;border-bottom:1px solid #000;outline: none; text-align:center;">、
+                <input type="text" style="width:100px;border:0;border-bottom:1px solid #000;outline: none;text-align:center;">和
+                <input type="text" style="width:100px;border:0;border-bottom:1px solid #000;outline: none;text-align:center;">
+            </p>
+        </div>
+    </div>
+</div>
+
+<div ng-if="toId==5&&itid==2">
+    <div class="panel panel-default panel-width">
+        <div class="panel-heading title">填空题答案</div>
+        <div class="panel-body">
+            <p  class="topic_p">行、列、和单元格</p>
+        </div>
+    </div>
+</div>

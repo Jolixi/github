@@ -1,0 +1,49 @@
+/*登录主内容*/
+.login-body {
+    /*background-color: #e5e8ec;*/
+    background: #65cea7 url("../img/login-bg.jpg") no-repeat fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    min-width: 1206px;
+}
+
+/*登录div的大小固定住*/
+
+.login-div {
+    width: 748px;
+}
+
+/*图标*/
+
+.my-i {
+    width: 24px;
+    height: 28px;
+}
+
+/*垂直*/
+.vertical-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*下边距和圆弧框为0*/
+.my-margin-bottom {
+    margin-bottom: 0px;
+
+}
+
+.my-border-radius {
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+
+/*25padding*/
+.my-padding-25 {
+    padding: 25px;
+}
+
+

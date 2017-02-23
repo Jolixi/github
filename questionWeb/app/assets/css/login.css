@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding:0;
+}
+/*@media (max-width: 767px) {*/
+    /*.login_body{*/
+        /*height: 400px;*/
+        /*background: url("../img/login.png") 0 0 no-repeat;*/
+        /*background-size: 40% auto;*/
+    /*}*/
+/*}*/
+/*@media (min-width: 768px) and (max-width: 991px) {*/
+    /*.login_body{*/
+        /*height: 600px;*/
+        /*background: url("../img/login.png") 0 0 no-repeat;*/
+        /*background-size: 60% auto;*/
+    /*}*/
+/*}*/
+/*@media (min-width: 992px) {*/
+    /*.login_body{*/
+        /*height: 800px;*/
+        /*background: url("../img/login.png") 0 0 no-repeat;*/
+        /*background-size: 80% auto;*/
+    /*}*/
+/*}*/
+.bg-backgroud{
+    background: url("../img/login.png") no-repeat fixed;
+    background-size: cover;
+}
+.login_body{
+    height: 800px;
+}
+.login{
+    margin: 150px auto 0;
+    width: 400px;
+    height: 350px;
+    background-color:rgba(247,247,247,0.2);
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color:#999999;
+    padding: 60px 28px;
+}
+.wyh_ima1{
+    float: right;
+    margin-bottom: 20px;
+    width: 343px;
+    height: 40px;
+    background-image: url(../../assets/img/user.png);
+    background-repeat: no-repeat;
+    background-position: 3.5px;
+}
+.wyh_ima{
+    float: right;
+    width: 342px;
+    height: 40px;
+    margin-bottom: 20px;
+    background-image: url(../../assets/img/password.png);
+    background-repeat: no-repeat;
+    background-position: 1px;
+}
+/*.wyh_ima*/
+.body_check{
+    float: right;
+    width: 348px;
+    height: 40px;
+    background-image: url(../../assets/img/checkNumber.png);
+    background-repeat: no-repeat;
+    background-position: 8px;
+}
+.body_buttom{
+    margin: 30px 72px;
+    width: 200px;
+    height: 40px;
+    background-color: #fa9b14;
+    font-family: "Microsoft YaHei";
+    color: #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+.body_buttom:hover{
+    background-color: #e58c0d;
+    text-decoration: none;
+    color: #ffffff;
+}
+.body_span{
+    float: right;
+    margin-left: 8px;
+    height: 40px;
+    width: 85px;
+    cursor: pointer;
+    z-index: 3000;
+}
+.body_input{
+    margin-bottom: 20px;
+    width: 300px;
+    float: right;
+    height: 40px;
+    border: 0;
+    background-repeat: no-repeat;
+    background-position: 6px 7px;
+}
+.body_input:hover,.body_inputtwo:hover{
+    box-shadow:0 0 6px rgb(250,154,18);
+}
+.body_inputtwo{
+    width: 200px;
+    margin-left: 45px;
+    height: 40px;
+    border: 0;
+}
+input{
+    outline: none;
+    border-radius: 10px;
+    padding: 0 16px;
+}

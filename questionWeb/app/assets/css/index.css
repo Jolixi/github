@@ -1,0 +1,221 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+@media (max-width: 900px) {
+    .img-width{
+        zoom: 0.8;
+    }
+    .tt1{
+        display: none;
+    }
+    .tt2{
+        display: none;
+    }
+    /*.img_font{*/
+        /*zoom: 0.8;*/
+    /*}*/
+}
+/*头部最小宽度*/
+.my_min_header_width{
+    min-width: 450px;
+}
+.min-height{
+    margin-top: 110px;
+    min-height: 710px;
+}
+.img-width{
+    min-width: 750px;
+}
+.my_logo{
+    padding: 12.5px 0;
+}
+.my_orange{
+    color: orange;
+}
+.header_nav{
+    font-family: 微软雅黑;
+    font-size: 14px;
+    text-align: center;
+    padding-top:66.5px;
+}
+.header_nav span{
+    display: inline-block;
+}
+.header_nav span + span{
+    border-left: 1px solid #8c8c8c;
+}
+
+.header_nav a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.header_nav a:hover{
+    color: orange;
+    text-decoration: none;
+}
+
+/*脚部*/
+.my_bottom{
+    bottom: 0;
+    font-family: 宋体;
+    background: #333333;
+    font-size: 12px;
+    text-align: center;
+    height: 100px;
+    color: #ccc;
+    z-index: 3000;
+}
+/*脚部最小宽度*/
+.my_min_footer_width{
+    width: 100%;
+    min-width: 890px
+}
+
+
+.img_icon{
+    height:300px;
+}
+.img_icon2{
+    height: 145px;
+}
+.img_all1{
+    float: left;
+    background: url("../img/html_nor.png");
+    background-size: cover;
+    background-position:center;
+}
+.img_all1:hover{
+    background: url("../img/html_hover.png");
+    background-size: cover;
+    background-position:center;
+
+}
+.img_all2{
+    float: left;
+}
+.icon_img1{
+    background: url("../img/angular_nor.png");
+    background-size: cover;
+    background-position:center;
+
+}
+.icon_img1:hover{
+    background: url("../img/angular_hover.png");
+    background-size: cover;
+    background-position:center;
+
+}
+.icon_img2{
+    background: url("../img/css_nor.png");
+    background-size: cover;
+    background-position:center;
+
+}
+.icon_img2:hover{
+    background: url("../img/css_hover.png");
+    background-size: cover;
+    background-position:center;
+
+}
+
+.img_all2 a:nth-child(2){
+    display: block;
+    margin-top: 10px;
+}
+.img_all3{
+    float: left;
+    background: url("../img/java_nor.png");
+    background-size: cover;
+    background-position:center;
+}
+.img_all3:hover{
+    background: url("../img/java_hover.png");
+    background-size: cover;
+    background-position:center;
+
+}
+.all_img{
+    background: url("../img/kemu_bg.png");
+    background-size: cover;
+    background-position:center;
+}
+/*angular背景图片*/
+.angular_img{
+    background:url("../img/home_angular_bg.png");
+    background-size: cover;
+    background-position:center;
+}
+/*HTML背景图片*/
+.html_img{
+    background: url("../img/home_html_bg.png");
+    background-size: cover;
+    background-position:center;
+}
+/*css背景图片*/
+.css_img{
+    background: url("../img/home_css_bg.png");
+    background-size: cover;
+    background-position:center;
+}
+/*java背景图片*/
+.java_img{
+    background: url("../img/home_java_bg .png") center center;
+    background-size: cover;
+    background-position:center;
+}
+/*字体位置*/
+.all_font{
+    text-align: center;
+    font-family:微软雅黑;
+    color:#FFFFFF;
+}
+/*按钮*/
+.all_font_btn{
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.all_font_btn img:hover{
+    outline:1px solid pink;
+    opacity: 0.6;
+}
+.img1 img:hover{
+    outline:1px solid pink;
+    opacity: 0.6;
+}
+.img2 img:hover{
+    outline:1px solid yellow;
+    opacity: 0.6;
+}
+.all_font_btn img:hover{
+    outline:1px solid pink;
+    opacity: 0.6;
+}
+.title1,.html_title1{
+    font-size: 40px !important;
+}
+.title2{
+    font-size: 26px !important;
+    /*margin-left: 10px;*/
+}
+.title3{
+    margin-top: 10px;
+    font-size: 18px;
+    /*margin-left: 10px;*/
+}
+/*描述文字*/
+.img_font{
+    font-family:微软雅黑;
+    color:#FFFFFF;
+    text-align: left;
+}
+
+
+
+
+
+
+
+

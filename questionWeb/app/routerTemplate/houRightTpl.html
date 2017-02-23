@@ -1,0 +1,369 @@
+<!--<a href="{{'#/subject/'+idStata+'/topic/item/1'}}">试题</a>-->
+<!--<a href="{{'#/subject/'+idStata+'/topic/item/2'}}">答案</a>-->
+<div class="right_box">
+    <div ng-if="idStata==1">
+        <!--科目右边框-->
+        <div class="subject_all">
+            <P class="right_title">科目维护</P>
+            <button class="right_button right_button1" ng-click="addSubject()">添加</button>
+            <div class="right_content">
+                <div class="subject_top">
+                    <span class="font_size">科目名称</span>
+                    <input class="subject_input">
+                    <button class="right_button right_button1">查询</button>
+                    <button class="right_button subject_button float_right">全部数据</button>
+                </div>
+                <div class="subject_option">
+                    <table class="table  table-striped text-center">
+                        <thead>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>操作</td>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td><span ng-click="deleteSubject()">删除</span>&nbsp;|&nbsp;<span ng-click="editSubject()">修改</span></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="subject_bottom">
+                    <span class="float_right ds_play">[1][2][3][4][5]</span>
+                </div>
+            </div>
+        </div>
+
+        <!--修改弹出框-->
+        <div class="subject_alter" ng-show="subjectEdit">
+            <div class="subject_delete_t">
+                修改
+            </div>
+            <button class="subject_delete_back" ng-click="editClose()">X</button>
+            <div class="subject_delete_b">
+                <p><span>科目名称</span><input type="text" class="add_input"></p>
+                <div>
+                    <button class="right_button right_button1">修改</button>
+                    <button class="right_button right_button1 margin_left" ng-click="editClose()">取消</button>
+                </div>
+            </div>
+        </div>
+
+        <!--删除弹出框-->
+        <div class="subject_delete" ng-show="subjectDelete">
+            <div class="subject_delete_t">
+                删除
+            </div>
+            <div class="subject_delete_b">
+                <p>你是否真的删除?</p>
+                <button class="subject_delete_back" ng-click="deleteClose()">X</button>
+                <div>
+                    <button class="right_button right_button1">删除</button>
+                    <button class="right_button right_button1 margin_left" ng-click="deleteClose()">取消</button>
+                </div>
+            </div>
+        </div>
+
+        <!--添加弹出框-->
+        <div class="subject_add" ng-show="subjectAdd">
+            <div class="subject_delete_t">
+                添加
+            </div>
+            <button class="subject_delete_back" ng-click="addClose()">X</button>
+            <div class="subject_delete_b">
+                <p><span>科目名称</span><input type="text" class="add_input"></p>
+                <div>
+                    <button class="right_button right_button1">添加</button>
+                    <button class="right_button right_button1 margin_left" ng-click="addClose()">取消</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div ng-if="idStata==2">
+        <!--题目右边框-->
+        <div class="subject_all">
+            <P class="right_title">题目维护</P>
+            <button class="right_button right_button2" ng-click="addTopic()">添加题目</button>
+            <div class="right_content">
+                <div class="title_top">
+                    <div class="title_top_t">
+                        <span class="font_size">当前科目选择为&nbsp;：</span>
+                        <input type="text" class="subject_input input_margin">
+                        <span class="font_size">题目</span>
+                        <input type="text" class="subject_input input_margin">
+                        <button class="right_button right_button1">查询</button>
+                        <button class="right_button subject_button margin_left">全部数据</button>
+                    </div>
+                    <div class="title_top_b">
+                        <p class="span">
+                            科目：<span>JAVA</span><span>JAVA</span><span>JAVA</span><span>JAVA</span><span>更多</span></p>
+                    </div>
+                </div>
+                <div class="title_middle">
+                    <button class="title_middle_button margin_left">单选题</button>
+                    <button class="title_middle_button">多选题</button>
+                    <button class="title_middle_button">问答题</button>
+                    <button class="title_middle_button">填空题</button>
+                    <button class="title_middle_button">判断题</button>
+                </div>
+                <div class="subject_option">
+                    <table class="table  table-striped text-center">
+                        <thead>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>操作</td>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td><span>删除</span>&nbsp;|&nbsp;<span>修改</span></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="subject_bottom">
+                    <span class="float_right ds_play">[1][2][3][4][5]</span>
+                </div>
+            </div>
+        </div>
+        <!--添加题目-->
+        <div class="addition" ng-show="topicAdd">
+            <div class="addition_title">
+                <span>题型选择：</span>
+                <select ng-model="inputList.data" style="display: inline-block; width: 150px;" class="text-center">
+                    <option>选择题</option>
+                    <option>填空题</option>
+                    <option>判断题</option>
+                    <option>问答题</option>
+                </select>
+            </div>
+            <button class="subject_delete_back" ng-click="addTopicClose()">X</button>
+            <div class="addition_btn">
+                <span ng-click="checkSelct()">下一步</span>
+            </div>
+        </div>
+        <!--判断题添加-->
+        <div class="trueFalse_add" ng-show="recognizeAdd">
+            <div class="trueFalse_title bg">
+                <span>判断题添加</span>
+            </div>
+            <button class="subject_delete_back" ng-click="recognizeClose()">X</button>
+            <div class="trueFalse_content">
+                <span>题目：</span>
+                <textarea type="text" class="trueFalse_input"></textarea>
+                <p>判断题答案:<input type="checkbox"></p>
+            </div>
+            <div class="trueFalse_btn">
+                <div class="trueFalse_btn_child1 bg ">添加题目</div>
+                <div class="trueFalse_btn_child2 bg" ng-click="recognizeClose()">取消</div>
+            </div>
+        </div>
+        <!--填空题型添加-->
+        <div class="space_add" ng-show="spaceAdd">
+            <div class="space_add_t">
+                填空题添加
+            </div>
+            <button class="subject_delete_back" ng-click="spaceClose()">X</button>
+            <div class="space_add_b1">
+                <span>题目：</span>
+                <textarea type="text" class="space_add_input"></textarea>
+            </div>
+            <div class="space_add_b2">
+                <button class="right_button subject_button margin_btn">添加填空题答案项</button>
+            </div>
+            <div class="space_add_b3">
+                <input type="checkbox" class="space_check">
+                <textarea class="space_text"></textarea>
+                <button class="right_button subject_button space_btn">删除当前选项</button>
+            </div>
+            <div class="space_add_b3">
+                <input type="checkbox" class="space_check">
+                <textarea class="space_text"></textarea>
+                <button class="right_button subject_button space_btn">删除当前选项</button>
+            </div>
+            <div class="space_add_b3">
+                <input type="checkbox" class="space_check">
+                <textarea class="space_text"></textarea>
+                <button class="right_button subject_button space_btn">删除当前选项</button>
+            </div>
+            <div class="space_add_b4">
+                <button class="right_button subject_button">删除题目</button>
+                <button class="right_button subject_button" ng-click="spaceClose()">取消</button>
+            </div>
+        </div>
+        <!--选择题型添加-->
+        <div class="select_add" ng-show="selectAdd">
+            <div class="space_add_t">
+                选择题添加
+            </div>
+            <button class="subject_delete_back" ng-click="selectClose()">X</button>
+            <div class="space_add_b1">
+                <span>题目：</span>
+                <textarea type="text" class="space_add_input"></textarea>
+            </div>
+            <div class="select_add_b2">
+                <span>选择题目类型：</span>
+                <input type="checkbox" class="space_check">
+                <span>单选</span>
+                <button class="right_button subject_button select_btn">添加</button>
+            </div>
+            <div class="space_add_b3">
+                <input type="checkbox" class="space_check">
+                <textarea class="space_text"></textarea>
+                <button class="right_button subject_button space_btn">删除当前选项</button>
+            </div>
+            <div class="space_add_b3">
+                <input type="checkbox" class="space_check">
+                <textarea class="space_text"></textarea>
+                <button class="right_button subject_button space_btn">删除当前选项</button>
+            </div>
+            <div class="space_add_b3">
+                <input type="checkbox" class="space_check">
+                <textarea class="space_text"></textarea>
+                <button class="right_button subject_button space_btn">删除当前选项</button>
+            </div>
+            <div class="space_add_b4">
+                <button class="right_button subject_button">删除题目</button>
+                <button class="right_button subject_button" ng-click="selectClose()">取消</button>
+            </div>
+        </div>
+        <!--问答题添加-->
+        <div class="asked_add" ng-show="answerAdd">
+            <div class="space_add_t">
+                问答题添加
+            </div>
+            <button class="subject_delete_back" ng-click="answerClose()">X</button>
+            <div class="space_add_b1">
+                <span>题目：</span>
+                <textarea type="text" class="asked_add_input1"></textarea>
+            </div>
+            <div class="space_add_b1">
+                <p>我的答案：</p>
+                <textarea type="text" class="asked_add_input2"></textarea>
+            </div>
+            <div class="space_add_b4">
+                <button class="right_button subject_button">添加题目</button>
+                <button class="right_button subject_button" ng-click="answerClose()">取消</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div ng-if="idStata==3">
+        <header>
+            <p class="headerTitle">用户维护</p>
+            <div class="content">
+                <form class="form3">
+                    <div>
+                        <span>用户帐号:</span><input type="text">
+                    </div>
+                    <div>
+                        <span>原始密码:</span><input type="text">
+                    </div>
+                    <div>
+                        <span>更新密码:</span><input type="text">
+                    </div>
+                    <div>
+                        <span>确认密码:</span><input type="text">
+                    </div>
+                    <div class="checkBtn">
+                        <input type="submit" value="保存">
+                    </div>
+                </form>
+            </div>
+        </header>
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+

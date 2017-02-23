@@ -1,0 +1,15 @@
+/*脚注*/
+.my-footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    /*height: 40px;*/
+    width: 100%;
+    text-align: center;
+    background: white;
+    color: #999999;
+    font-family: 宋体;
+    font-size: 12px;
+    padding: 10px 0;
+    z-index: 9999;
+}

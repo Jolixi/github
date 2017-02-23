@@ -1,0 +1,32 @@
+/*导航栏高度*/
+.my-nav {
+    height: 59px;
+    background-color: #fa9a12;
+}
+
+/*
+ * 顶部导航
+ * 顶部导航边框
+ */
+.navbar-fixed-top {
+    border: 0;
+}
+
+/*导航栏图标*/
+.tooltips {
+    background-color: #FFF;
+    padding: 6px;
+    border-radius: 9px;
+    color: #1b809d;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+/*导航栏brand字体以及大小*/
+.my-nav-brand-font {
+    /*margin-left:15px;*/
+    font-size: 21px;
+    color: #ffffff;
+}

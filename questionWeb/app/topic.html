@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/topic.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <!--jquery-->
+    <script src="../bower_components/jquery-3.1.0.js"></script>
+    <!--angular-->
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <!--angular路由-->
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <!--模块顺序【1】-->
+    <script src="app.js"></script>
+    <!--路由表-->
+    <script src="router/uiRouter.js"></script>
+    <script src="run/run.js"></script>
+    <script src="server/basePath.js"></script>
+    <script src="routerController/subjectrouterCtrl.js"></script>
+    <script src="routerController/topicRouterCtrl.js"></script>
+    <script src="routerController/itemTplCtrl.js"></script>
+    <!--其他控制器-->
+    <script src="controller/indexCtrl.js"></script>
+    <script src="directive/headerDirective.js"></script>
+    <script src="directive/footerDirective.js"></script>
+    <script src="directive/topicLeftDCtrl.js"></script>
+    <script src="directive/topicNav.js"></script>
+
+</head>
+
+<body ng-controller="indexCtrl" class="bg-img">
+<hearder-tpl>
+    <subject-topic style="color: orange">题库</subject-topic>
+    <subject-more>更多</subject-more>
+    <nav-content><a href="login.html">登录</a></nav-content>
+</hearder-tpl>
+
+<div id="bg_box" class="margin-bottom ">
+    <!--科目导航-->
+    <topic-nav></topic-nav>
+    <div class="container min-width">
+        <div class="row">
+            <div ui-view></div>
+        </div>
+    </div>
+</div>
+
+<!--脚部-->
+<footer-tpl></footer-tpl>
+
+</body>
+</html>

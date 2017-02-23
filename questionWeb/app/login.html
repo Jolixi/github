@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <!--jquery-->
+    <script src="../bower_components/jquery-3.1.0.js"></script>
+    <!--angular-->
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <!--angular路由-->
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <!--模块顺序【1】-->
+    <script src="app.js"></script>
+    <!--控制器还没加载-->
+    <script src="server/basePath.js"></script>
+    <!--头部底部的指令模块-->
+    <script src="directive/headerDirective.js"></script>
+    <script src="directive/footerDirective.js"></script>
+</head>
+<body class="bg-backgroud" style="min-width: 500px">
+<hearder-tpl>
+    <subject-topic>题库</subject-topic>
+    <subject-more>更多</subject-more>
+    <nav-content><a href="login.html" style="color: orange">登录</a></nav-content>
+</hearder-tpl>
+<div class="login_body">
+    <div class="container">
+        <div class="login">
+            <form>
+                <label class="wyh_ima1"><input class="body_input" placeholder="用户账号" type="text" /></label>
+                <label class="wyh_ima"><input class="body_input" placeholder="用户密码" type="password" /></label>
+                <label class="body_check">
+                    <input class="body_inputtwo" placeholder="验证码" type="text"/>
+                    <img class="body_span" src="assets/img/img.png">
+                </label>
+                <a href="../background/fream-1.html" class="body_buttom">登录</a>
+            </form>
+        </div>
+        <!--登陆部分结束-->
+    </div>
+</div>
+<footer-tpl></footer-tpl>
+</body>
+</html>
